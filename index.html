@@ -1,16 +1,90 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script src="./src/index.js" defer></script>
+  </head>
 
-<head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-</head>
-
-<body>
-	<div id="app"></div>
-
-	<script src="src/index.js">
-	</script>
-</body>
-
+  <body>
+    <div class="container">
+      <div class="row border border-3">
+        <div class="col-2 border border-3 position-relative">
+          <button
+            class="carousel-control-prev border"
+            type="button"
+            data-bs-target="#carouse"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon"
+              aria-hidden="true"
+              style="color: black;"
+              >&lt;</span
+            >
+          </button>
+        </div>
+        <div class="col-8 border border-3">
+          <div
+            id="carouse"
+            class="carousel slide fs-1"
+            data-bs-ride="carousel"
+            data-bs-interval="false"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active text-center">
+                <div class="square">
+                  1
+                </div>
+                <div class="square">
+                  1
+                </div>
+                <div class="square">
+                  1
+                </div>
+              </div>
+              <div class="carousel-item text-center">
+                <div class="square">
+                  2
+                </div>
+                <div class="square">
+                  2
+                </div>
+                <div class="square">
+                  2
+                </div>
+              </div>
+              <div class="carousel-item text-center">
+                <div class="square">
+                  3
+                </div>
+                <div class="square">
+                  3
+                </div>
+                <div class="square">
+                  3
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 border border-3">
+          <button
+            class="carousel-control-next position-relative"
+            type="button"
+            data-bs-target="#carouse"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon"
+              aria-hidden="true"
+              style="color: black;"
+              >&gt;</span
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
