@@ -87,3 +87,7 @@ body {
   display: flex;
   border: 2px solid blueviolet;
 }
+
+.carousel-item-end {
+  display: flex;
+}
